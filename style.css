@@ -1,0 +1,61 @@
+body{
+    background: rgba(255, 199, 0, 0.43);
+    margin: 0px;
+    color:green;
+}
+
+.home{
+
+    text-align: center;
+}
+
+.container{
+    
+    margin-top: 200px;
+}
+
+input{
+    border-radius:50px;
+    margin-top: 5px;
+    text-align: center;
+}
+button{
+    margin-top: 5px;
+}
+
+.profile{
+    text-align: center;
+}
+
+label{
+    width:140px;
+    
+    text-align: center;
+    
+}
+.preference{
+    display: flex;
+    justify-content:space-around;
+}
+
+.savebtn{
+    margin-top: 50px;
+    border-radius: 20px;
+    
+
+}
+
+.hikconta{
+    display: flex;
+}
+
+.catagoryimage{
+
+    width: 200px;
+    height:200px;
+    margin-left: 20px;
+}
+
+
+
+
