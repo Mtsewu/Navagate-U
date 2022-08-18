@@ -19,7 +19,7 @@ body{
     
 }
 * {box-sizing: border-box}
-.slide1, .slide2 {display: none}
+.mySlides1, .mySlide2 {display: none}
 img {vertical-align: middle;}
 .slideshow-container {
     max-width: 1000px;
@@ -48,7 +48,7 @@ img {vertical-align: middle;}
 .prev{
     left: 0;
   border-radius: 3px 0 0 3px;
-}
+} 
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
@@ -56,9 +56,13 @@ img {vertical-align: middle;}
   color: black;
 }
 
-.container{
+/* .container{
     
     margin-top: 200px;
+} */
+.landing-pics{
+    width: 80%;
+    
 }
 
 input{
@@ -99,10 +103,18 @@ label{
 .catagoryimage{
 
     width: 200px;
-    height:200px;
+    height: 200px;
+    
     margin-left: 20px;
 }
-
+.gamecont{
+    display: flex;
+}
+/* .hiking{
+    height: 50%;
+    width: 80%;
+    background-color: red;
+} */
 
 
 
