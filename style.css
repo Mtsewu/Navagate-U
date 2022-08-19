@@ -116,5 +116,35 @@ label{
     background-color: red;
 } */
 
+a{
+    color: darkgrey;
+    text-decoration: antiquewhite;
+    
+}
 
-
+.bowling{
+    text-align: center;
+}
+.pagepics{
+    width: 70%;
+}
+.info-cont{
+    display: flex;
+    /* justify-content: space-around; */
+    
+}
+.info{
+    padding: 0px;
+    font-size: medium;
+    /* background-color: gray; */
+    margin: 20px;
+    margin-right: 10px;
+    width: 45%;
+    text-align: left;
+}
+.abtlist{
+    list-style: none;
+}
+.headerish{
+    text-align: right;
+}
