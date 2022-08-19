@@ -1,24 +1,20 @@
-let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+const express = require('express');
+const app = express();
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-function plusSlides2(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/chat.html');
+});
 
+io.on('connection', (socket) => {
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
+  });
+});
 
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
+server.listen(3000, () => {
+  console.log('listening on *:3000');
+});
